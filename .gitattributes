@@ -1,0 +1,5 @@
+Assets/Scenes/DTWIN-FIRST[[:space:]]1.unity filter=lfs diff=lfs merge=lfs -text
+Assets/Models/XI-35[[:space:]]Pro组装体[[:space:]]v44[[:space:]]v13.step filter=lfs diff=lfs merge=lfs -text
+*.unity binary
+*.prefab binary
+*.asset binary
