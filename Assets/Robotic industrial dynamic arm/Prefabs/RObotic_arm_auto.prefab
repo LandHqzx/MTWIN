@@ -650,7 +650,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5226965367503143584}
   - component: {fileID: 3227454821486184305}
-  - component: {fileID: 6868553728296951384}
+  - component: {fileID: 3385622483980071927}
   m_Layer: 0
   m_Name: RObotic_arm_auto
   m_TagString: Untagged
@@ -771,7 +771,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &6868553728296951384
+--- !u!114 &3385622483980071927
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
