@@ -5,20 +5,19 @@ using System;
 
 public class product : MonoBehaviour
 {
-    List<Vector3> trackList = new List<Vector3>();  //×ø±êÁĞ±í
-    float transferSpeed = 3f;   //´«ËÍµÄËÙ¶È
-    float turningSpeed = 0.1f;    //×ªÏòËÙ¶È
+    List<Vector3> trackList = new List<Vector3>();  //åæ ‡åˆ—è¡¨
+    float transferSpeed = 3f;   //ä¼ é€çš„é€Ÿåº¦
     Vector3 transferDirection;
     int i = 0;
     // Start is called before the first frame update
     void Start()
     {
         /*
-         * ÕâÊÇÒ»¸ö²âÊÔÓÃÀıµÄ¿ªÊ¼²¿·Ö
+         * è¿™æ˜¯ä¸€ä¸ªæµ‹è¯•ç”¨ä¾‹çš„å¼€å§‹éƒ¨åˆ†
          */
-         trackList = new List<Vector3>(new Vector3[] { new Vector3(0, 0, 0), new Vector3(10, 10, 0), new Vector3(10, 40, 60), new Vector3(40, 20, 30) });
+         trackList = new List<Vector3>(new Vector3[] { new Vector3((float)83.4800034, (float)2.1730001, (float)12.3800001), new Vector3((float)101.610001, (float)2.1730001, (float)12.3800001),new Vector3((float)101.610001, (float)2.1730001, (float)37.1300011) });
         /*
-         * ÕâÊÇÒ»¸ö²âÊÔÓÃÀıµÄ½áÊø²¿·Ö
+         * è¿™æ˜¯ä¸€ä¸ªæµ‹è¯•ç”¨ä¾‹çš„ç»“æŸéƒ¨åˆ†
          */
         MessageOp(trackList);
     }
@@ -32,23 +31,23 @@ public class product : MonoBehaviour
     {
         transferDirection = trackList[i];
         if(this.transform.localPosition != transferDirection && i< trackList.Count) {
-            //µ±Ã»ÔÚÏÂÒ»¸ö½ÚµãµÄÊÇÊ±ºòÒÆ¶¯
+            //å½“æ²¡åœ¨ä¸‹ä¸€ä¸ªèŠ‚ç‚¹çš„æ˜¯æ—¶å€™ç§»åŠ¨
             gameObject.transform.localPosition = Vector3.MoveTowards(gameObject.transform.localPosition, transferDirection, transferSpeed * Time.deltaTime);
         }
         else
         {
-            //µ±ÔÚÏÂÒ»¸ö½ÚµãµÄÊ±ºòĞı×ª
+            //å½“åœ¨ä¸‹ä¸€ä¸ªèŠ‚ç‚¹çš„æ—¶å€™æ—‹è½¬
             i += 1;
             transferDirection = trackList[i];
-            //transform.rotation = Quaternion.LookRotation(transferDirection - transform.position);
+            //Quaternion.LookRotation(transferDirection);
             transform.LookAt(transferDirection);
         }
     }
     void MessageOp(List<Vector3> sendList)
     {
-        //ÆäËû½Å±¾µ÷ÓÃ±¾½Å±¾µÄÆô¶¯º¯Êı
+        //å…¶ä»–è„šæœ¬è°ƒç”¨æœ¬è„šæœ¬çš„å¯åŠ¨å‡½æ•°
         trackList = sendList;
-        //³õÊ¼»¯Î»ÖÃÁĞ±í£¬²¢½«Îï¼ş×ø±ê·ÅÖÃÔÚ¿ªÍ·
+        //åˆå§‹åŒ–ä½ç½®åˆ—è¡¨ï¼Œå¹¶å°†ç‰©ä»¶åæ ‡æ”¾ç½®åœ¨å¼€å¤´
         trackList.Insert(0, this.transform.localPosition);
     }
 }
