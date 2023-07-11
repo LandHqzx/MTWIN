@@ -217,7 +217,7 @@ public class RoboticArm_IK : MonoBehaviour
             grip = false;
             yield return new WaitForSeconds(1);
 
-            Instantiate(cubePrefab, cubePos.position, Quaternion.Euler(0,0,0));
+            //Instantiate(cubePrefab, cubePos.position, Quaternion.Euler(0,0,0));
 
             //move to original position
             yield return moveArm(t_arm0, q1_arm0, q2_arm0, q3_arm0);
