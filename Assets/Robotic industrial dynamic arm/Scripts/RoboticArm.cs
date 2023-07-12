@@ -13,22 +13,22 @@ public class RoboticArm : MonoBehaviour {
 	public Transform part3;
 	public Transform gripLeft;
 	public Transform gripRight;
+	float r = 0;
 
 	// this is the audio source to play the arm sound
 	public AudioSource audioS;
 
 	void Start () {
-	
 
+		transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.Euler(-90, 90, 0), 0.2f);
 	}
-	
+
 	// Update is called once per frame
 
-	void FixedUpdate () 
+	void FixedUpdate()
 	{
-		
-	}
 
+	}
 	public void rotatePart0(float val)
 	{
 		// between 0 and 360 degrees

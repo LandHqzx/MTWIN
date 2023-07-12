@@ -78,8 +78,7 @@ public class RoboticArm_IK : MonoBehaviour
         q3_arm0 = part3.transform.rotation;
 
 
-        if (automovement)
-        { StartCoroutine(movement()); }
+        StartCoroutine(movement());
  
 
     }
@@ -172,7 +171,7 @@ public class RoboticArm_IK : MonoBehaviour
             }
 
 
-
+        
         }
         if (grip)
         {
@@ -186,7 +185,7 @@ public class RoboticArm_IK : MonoBehaviour
             gripRight.AddTorque(-torque[4] * gripRight.mass * gripRight.transform.forward);
 
         }
-
+        
 
 
         //show reative rotation on the inspector
@@ -202,7 +201,7 @@ public class RoboticArm_IK : MonoBehaviour
     {
         while (true)
         {
-
+            //这是一个完整的周期
             //move to pick object
             yield return moveArm(Tpick, Q1pick, Q2pick, Q3pick);
             grip = true;
@@ -216,8 +215,6 @@ public class RoboticArm_IK : MonoBehaviour
             yield return new WaitForSeconds(1);
             grip = false;
             yield return new WaitForSeconds(1);
-
-            Instantiate(cubePrefab, cubePos.position, Quaternion.Euler(0,0,0));
 
             //move to original position
             yield return moveArm(t_arm0, q1_arm0, q2_arm0, q3_arm0);
