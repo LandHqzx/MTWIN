@@ -650,7 +650,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5226965367503143584}
   - component: {fileID: 3227454821486184305}
-  - component: {fileID: 6868553728296951384}
+  - component: {fileID: 3385622483980071927}
   m_Layer: 0
   m_Name: RObotic_arm_auto
   m_TagString: Untagged
@@ -771,7 +771,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &6868553728296951384
+--- !u!114 &3385622483980071927
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1114,7 +1114,7 @@ BoxCollider:
   m_GameObject: {fileID: 7047481262238099238}
   m_Material: {fileID: 13400000, guid: 414c1d316fbdd244083ceb146b7bc07c, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.003023367, y: 0.008765157, z: 0.0030613472}
   m_Center: {x: -8.041885e-10, y: -0.0010719318, z: 2.0146806e-11}

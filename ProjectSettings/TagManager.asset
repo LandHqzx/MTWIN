@@ -9,6 +9,13 @@ TagManager:
   - g4a secondlight
   - Can
   - Align
+  - robot
+  - fan
+  - Plastic rings
+  - Carbon fiber
+  - Lens mount
+  - Camera mount
+  - Antenna holder
   layers:
   - Default
   - TransparentFX
