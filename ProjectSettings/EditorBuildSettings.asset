@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DTWIN-FIRST 1.unity
     guid: e05d12a938f4f194082d60e8a8671387
-  - enabled: 1
-    path: Assets/ScenesToKeep/printer.unity
-    guid: e2af327f09ebe444f9b8af2284b75be5
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

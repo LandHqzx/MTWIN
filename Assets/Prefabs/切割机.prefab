@@ -5245,6 +5245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5680326899073574337}
   - component: {fileID: 4189707278339135395}
+  - component: {fileID: 711353215705934060}
   m_Layer: 0
   m_Name: "\u5207\u5272\u673A"
   m_TagString: Untagged
@@ -5300,6 +5301,19 @@ MonoBehaviour:
   OverwriteExistingMaterials: 0
   NewMaterialPath: Assets/game4automation/CADLink/Materials
   MaterialMapping: {fileID: 11400000, guid: b550561d39ae15a4e911d65e0f4c1239, type: 2}
+--- !u!65 &711353215705934060
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5680326899073574339}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2347212, y: 1.6317548, z: 1.3974638}
+  m_Center: {x: 0.26758114, y: 0.3158773, z: -1.3002557}
 --- !u!1 &5704862912314102116
 GameObject:
   m_ObjectHideFlags: 0

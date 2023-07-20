@@ -19,27 +19,27 @@ public class product : MonoBehaviour
         {
             if (transform.position == new Vector3((float)83.4800034, (float)2.1730001, (float)16.0400009))
             {
-                trackList = new List<Vector3>(new Vector3[] { new Vector3((float)83.4800034, (float)2.1730001, (float)12.3800001), new Vector3((float)101.610001, (float)2.1730001, (float)12.3800001), new Vector3((float)101.610001, (float)2.1730001, (float)53.62) , new Vector3((float)95.5100021, (float)2.1730001, (float)53.6199989), new Vector3((float)95.5100021, (float)2.1730001, (float)68.7300034) });
+                trackList = new List<Vector3>(new Vector3[] { new Vector3((float)83.4800034, (float)2.1730001, (float)12.07), new Vector3((float)101.610001, (float)2.1730001, (float)12.07), new Vector3((float)101.610001, (float)2.1730001, (float)53.62) , new Vector3((float)95.5100021, (float)2.1730001, (float)53.6199989), new Vector3((float)95.5100021, (float)2.1730001, (float)68.7300034) });
             }
 
             else if (transform.position == new Vector3((float)76.7089996, (float)2.1730001, (float)16.0400009))
             {
-                trackList = new List<Vector3>(new Vector3[] { new Vector3((float)76.709, (float)2.1730001, (float)12.3800001), new Vector3((float)101.610001, (float)2.1730001, (float)12.3800001), new Vector3((float)101.610001, (float)2.1730001, (float)53.62), new Vector3((float)95.5100021, (float)2.1730001, (float)53.6199989), new Vector3((float)95.5100021, (float)2.1730001, (float)68.7300034) });
+                trackList = new List<Vector3>(new Vector3[] { new Vector3((float)76.709, (float)2.1730001, (float)12.07), new Vector3((float)101.610001, (float)2.1730001, (float)12.07), new Vector3((float)101.610001, (float)2.1730001, (float)53.62), new Vector3((float)95.5100021, (float)2.1730001, (float)53.6199989), new Vector3((float)95.5100021, (float)2.1730001, (float)68.7300034) });
             }
 
-            else if (transform.position == new Vector3((float)90.1200027, (float)2.1730001, (float)16.0400009))
+            else if (transform.position == new Vector3((float)90.1200333, (float)2.17300034, (float)16.039999))
             {
-                trackList = new List<Vector3>(new Vector3[] { new Vector3((float)90.12, (float)2.1730001, (float)12.3800001), new Vector3((float)101.610001, (float)2.1730001, (float)12.3800001), new Vector3((float)101.610001, (float)2.1730001, (float)53.62), new Vector3((float)95.5100021, (float)2.1730001, (float)53.6199989),new Vector3((float)95.5100021, (float)2.1730001, (float)68.7300034) });
+                trackList = new List<Vector3>(new Vector3[] { new Vector3((float)90.12, (float)2.1730001, (float)12.07), new Vector3((float)101.610001, (float)2.1730001, (float)12.07), new Vector3((float)101.610001, (float)2.1730001, (float)53.62), new Vector3((float)95.5100021, (float)2.1730001, (float)53.6199989),new Vector3((float)95.5100021, (float)2.1730001, (float)68.7300034) });
             }
         }
         else if (gameObject.tag == "fan")
         {
-            trackList = new List<Vector3>(new Vector3[] { new Vector3((float)29.0419998, (float)1.54700005, (float)43.2700005), new Vector3((float)46.3440018, (float)1.54700005, (float)44.2700005), new Vector3((float)46.3440018, (float)1.54700005, (float)52.4399986), new Vector3((float)96.4599991, (float)1.54700005, (float)53.4399986), new Vector3((float)96.4599991, (float)1.54700005, (float)67.9800034) });
+            trackList = new List<Vector3>(new Vector3[] { new Vector3((float)29.008, (float)1.209, (float)43.378), new Vector3((float)46.214, (float)1.209, (float)43.378), new Vector3((float)46.2900009, (float)1.209, (float)52.735), new Vector3((float)96.5599976, (float)1.209, (float)52.735), new Vector3((float)96.5599976, (float)1.209, (float)69.2200012) });
         }
 
         else if (gameObject.tag == "Carbon fiber")
         {
-            trackList = new List<Vector3>(new Vector3[] { new Vector3((float)44.7, (float)2.94000006, (float)19.12), new Vector3((float)44.7, (float)2.94000006, (float)54.1100006), new Vector3((float)95.3399963, (float)2.94000006, (float)54.1100006), new Vector3((float)95.3399963, (float)2.94000006, (float)69.6200027) });
+            trackList = new List<Vector3>(new Vector3[] { new Vector3((float)44.92, (float)1.145, (float)19.12), new Vector3((float)44.92, (float)1.145, (float)54.1100006), new Vector3((float)95.3399963, (float)1.145, (float)54.1100006), new Vector3((float)95.3399963, (float)1.145,(float)69.6200027) });
         }
 
         else if (gameObject.tag == "Lens mount")
@@ -55,6 +55,22 @@ public class product : MonoBehaviour
         else if (gameObject.tag == "Camera mount")
         {
             trackList = new List<Vector3>(new Vector3[] { new Vector3((float)138.557, (float)1.34, (float)12.7229996), new Vector3((float)163.350006, (float)1.34, (float)12.7200003), new Vector3((float)163.350006, (float)1.34, (float)53.5900017), new Vector3((float)95.4800034, (float)1.34, (float)53.5900017), new Vector3((float)95.4800034, (float)1.34, (float)69.5) });
+        }
+
+        else if (gameObject.tag == "drone")
+        {
+            if (transform.position == new Vector3((float)117.449997, (float)1.90699995, (float)129.606003))
+            {
+                trackList = new List<Vector3>(new Vector3[] { new Vector3((float)124.309998, (float)1.90699995, (float)129.606003), new Vector3((float)124.309998, (float)1.90999997, (float)110.730003), new Vector3((float)112.316002, (float)1.90999997, (float)110.730003), new Vector3((float)112.316002, (float)1.90999997, (float)101.440002) });
+            }
+            else if(transform.position == new Vector3((float)117.449997, (float)1.90699995, (float)142.979996))
+            {
+                trackList = new List<Vector3>(new Vector3[] { new Vector3((float)124.309998, (float)1.90699995, (float)142.979996), new Vector3((float)124.309998, (float)1.90999997, (float)110.730003), new Vector3((float)112.316002, (float)1.90999997, (float)110.730003), new Vector3((float)112.316002, (float)1.90999997, (float)101.440002) });
+            }
+            else if (transform.position == new Vector3((float)117.449997, (float)1.90699995, (float)155.410004))
+            {
+                trackList = new List<Vector3>(new Vector3[] { new Vector3((float)124.309998, (float)1.907, (float)155.410004), new Vector3((float)124.309998, (float)1.90999997, (float)110.730003), new Vector3((float)112.316002, (float)1.90999997, (float)110.730003), new Vector3((float)112.316002, (float)1.90999997, (float)101.440002) });
+            }
         }
         /*
          * 这是一个测试用例的结束部分
@@ -72,10 +88,10 @@ public class product : MonoBehaviour
         {
             // 已经遍历完trackList，停止执行FixedUpdate
             // 在到达最后一个点后销毁物品
-            //if (gameObject != null)
-            //{
-            //  Destroy(gameObject);
-            //}
+            if (gameObject != null)
+            {
+              Destroy(gameObject);
+            }
             return;
         }
         transferDirection = trackList[i];

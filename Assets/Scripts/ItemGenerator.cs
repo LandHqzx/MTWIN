@@ -16,6 +16,7 @@ public class ItemGenerator : MonoBehaviour
     private int generatedCount = 0; // 已生成的数量
     private float timer; // 计时器
 
+    
     void Update()
     {
         if (generatedCount >= quantity)
@@ -34,4 +35,5 @@ public class ItemGenerator : MonoBehaviour
             newItem.SetActive(true); // 设置新生成的物品为显示状态
         }
     }
+    
 }

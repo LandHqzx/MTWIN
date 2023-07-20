@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class CameraSwitcher : MonoBehaviour
 {
+    public static CameraSwitcher instance;
     public Camera firstPersonCamera;
     public Camera godCamera;
 
     public FirstPersonMovement MovementScript;  // 角色移动脚本
     public Jump JumpScript;  // 角色跳跃脚本
     public Crouch CrouchScript;  // 角色下蹲脚本
+
+    public cameracontrol cameracontrolScript;  // 摄像机移动脚本
 
     void Start()
     {
@@ -25,13 +28,14 @@ public class CameraSwitcher : MonoBehaviour
         }
     }
 
-    void ToggleCamera()
+    public void ToggleCamera()
     {
         // 切换摄像头的启用状态
         firstPersonCamera.enabled = !firstPersonCamera.enabled;
         godCamera.enabled = !godCamera.enabled;
         MovementScript.enabled = !MovementScript.enabled;
         JumpScript.enabled = !JumpScript.enabled;
-        CrouchScript.enabled = !CrouchScript.enabled;   
+        CrouchScript.enabled = !CrouchScript.enabled;
+        cameracontrolScript.enabled = !cameracontrolScript.enabled;
     }
 }

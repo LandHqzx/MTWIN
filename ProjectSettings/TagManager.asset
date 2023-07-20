@@ -16,6 +16,7 @@ TagManager:
   - Lens mount
   - Camera mount
   - Antenna holder
+  - drone
   layers:
   - Default
   - TransparentFX
